@@ -1,0 +1,15 @@
+{
+  "name": "cypress-applitools-maps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --record --key 25a2c783-fca7-46b6-a8cf-bdd83f8ff4e9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.42.0",
+    "cypress": "^13.7.0"
+  }
+}
