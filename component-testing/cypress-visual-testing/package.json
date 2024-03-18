@@ -1,5 +1,5 @@
 {
-  "name": "cypress-applitools-maps",
+  "name": "cypress-visual-testing",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
