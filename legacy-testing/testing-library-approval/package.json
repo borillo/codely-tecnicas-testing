@@ -1,0 +1,16 @@
+{
+  "name": "testing-library-approval",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.6",
+    "vitest": "^1.4.0"
+  }
+}

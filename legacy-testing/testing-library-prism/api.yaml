@@ -1,0 +1,35 @@
+openapi: 3.0.0
+
+info:
+  title: Starwars characters API
+  version: "1.0"
+
+components:
+  schemas:
+    Character:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+                example: Ricardo Borillo
+
+servers:
+  - url: "http://127.0.0.1:4010"
+
+paths:
+  /people:
+    get:
+      summary: List characters
+      tags: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Character"

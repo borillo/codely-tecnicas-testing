@@ -1,6 +1,10 @@
 import React from "react";
 import App from "./App";
 
+/**
+ * https://testing-library.com/docs/cypress-testing-library/intro/
+ */
+
 describe("<App />", () => {
   it("Puede gestionar el estado", () => {
     cy.mount(<App />);
