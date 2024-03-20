@@ -1,5 +1,14 @@
 import { test, expect } from "vitest";
 
+import { render } from "@testing-library/react";
+
+import App from "./App";
+
+test("UI components snapshot", async () => {
+  const { asFragment } = render(<App />);
+  expect(asFragment()).toMatchSnapshot();
+});
+
 test("API response snapshot", async () => {
   const response = await fetch("https://swapi.dev/api/people");
   const { results } = await response.json();

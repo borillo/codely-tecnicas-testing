@@ -1,18 +1,18 @@
 import React from "react";
 import App from "./App";
 
+import { appPageObject } from "./App.pageobject";
+
 /**
- * https://testing-library.com/docs/cypress-testing-library/intro/
+ * 📖 https://testing-library.com/docs/cypress-testing-library/intro/
  */
 
 describe("<App />", () => {
   it("Puede gestionar el estado", () => {
-    cy.mount(<App />);
-
-    const button = cy.findByRole("button", { name: "count is 0" });
-    button.click();
-    button.click();
-    button.click();
+    const app = appPageObject(<App />);
+    app.increase();
+    app.increase();
+    app.increase();
 
     cy.findByText("count is 3").should("exist");
   });

@@ -283,3 +283,11 @@ exports[`Computed data snapshot 1`] = `
   ],
 ]
 `;
+
+exports[`UI components snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    app
+  </div>
+</DocumentFragment>
+`;
